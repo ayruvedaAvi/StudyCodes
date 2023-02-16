@@ -1,0 +1,8 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "git.ignoreLimitWarning": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/hitmanog69/Downloads/Apps/mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar"
+    ]
+}
