@@ -1,0 +1,18 @@
+.fonts{
+    font-size: large;
+    font-family: serif;
+    font-style: oblique;
+    color: blue;
+    color-scheme: initial;
+}
+.lists,ol{
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+}
+.images{
+    margin: 3%;
+    padding: 30%;
+}
+img{
+    image-orientation: flip;
+}

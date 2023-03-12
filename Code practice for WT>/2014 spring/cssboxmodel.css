@@ -1,0 +1,13 @@
+.hello{
+    border-style: dashed;
+    border-width: 2;
+    border-color: bisque;
+    margin-bottom: 9%;
+}
+.hi{
+    margin:7%;
+    padding: 5%;
+    border-color: yellowgreen;
+    border-width:5;
+    border-style: solid;
+}
