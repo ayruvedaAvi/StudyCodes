@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Image stacking
+        </title>
+        <style>
+            .img{
+                position: absolute;
+                height: 300px;
+                width: 300px;
+            }
+            #img1{
+                z-index: 0;
+                left: 0;
+            }
+            #img2{
+                z-index: 0;
+                left: 100;
+            }
+            #img3{
+                z-index: 0;
+                left: 200;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="img" id="img1"
+         src="./Images/catto.jpg" onclick="stackImg('img1')">
+        <img class="img" id="img2" 
+         src="./Images/doggo.jpg" onclick="stackImg('img2')">
+        <img class="img" id="img2" 
+         src="./Images/juancover.jpg" onclick="stackImg('img3')">
+        
+         <script>
+            oldtopid="img3";
+            function stackImg(newtopid){
+                console.log("Function called.");
+                document.getElementById(newtopid).style.zIndex=1;
+                oldtopid=newtopid;
+            }
+         </script>
+    </body>
+</html>

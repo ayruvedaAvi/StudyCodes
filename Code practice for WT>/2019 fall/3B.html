@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation</title>
+    </head>
+    <body>
+        <form action="#" method="post" id="form">
+            Email: <input type="name" id="email"><br>
+            Password: <input type="text" id="pass"><br>
+            <input type="submit" name="" id="submit"> 
+        </form>
+        <script>
+            document.getElementById("email").onblur=validateEmail;
+            document.getElementById("pass").onblur=validatePass;
+            function validateEmail(){
+                var email= document.getElementById("email").value;
+                console.log(email);
+                if(email==''){
+                    alert("Email can't be empty.");
+                    return false;
+                }else{
+                    var index=email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+                    if(index==-1){
+                        alert("Email in incorrect format.");
+                        return false;
+                    }else{
+                        alert("Correct email.");
+                        return true;
+                    }
+                }
+            }
+            function validatePass(){
+                var pass=document.getElementById("pass").value;
+                if(pass==''){
+                    console.log("password validation.");
+                    alert("Password cannot be empty.");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

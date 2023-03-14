@@ -1,0 +1,48 @@
+<!-- Image stacking  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Image stacking
+        </title>
+        <style>
+            .imgs{
+                height: 400px;
+                width: 400px;
+                position: absolute;
+                padding: 10px;
+                margin: 10px;
+            }
+            #img1{
+                top:0;
+                left:0;
+                z-index: 0;
+            }
+            #img2{
+                top:100;
+                left:100;
+                z-index: 0;
+            }
+            #img3{
+                top: 500;
+                left: 500;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="img">
+            <img src="./Images/catto.jpg" 
+                 alt="img1"
+                 class="imgs" id="img1" onclick="moveImage('img1')">
+            <img src="./Images/doggo.jpg" 
+                alt="img2"
+                class="imgs" id="img2" onclick="moveImage('img2')">
+            <img src="./Images/juancover.jpg" 
+                alt="img3" class="imgs" id="img3"
+                onclick="moveImage('img3')" >
+        </div>
+        <script type="text/javascript" src="4B.js"></script>
+    </body>
+</html>
